@@ -3,3 +3,8 @@ portaudio19-dev
 libportaudio2
 libportaudiocpp0
 ffmpeg
+pkg-config 
+libcairo2-dev 
+gcc 
+python3-dev 
+libgirepository1.0-dev
