@@ -18,3 +18,5 @@ dependencies:
     - speechrecognition==3.8.1
     - urllib3==1.25.8
     - uuid==1.30
+    - gobject 
+    - PyGObject
