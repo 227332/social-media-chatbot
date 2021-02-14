@@ -1,0 +1,23 @@
+Step-by-step procedure to run the code:
+1. Download Microsoft Visual C++ 14.0 from https://visualstudio.microsoft.com/visual-cpp-build-tools
+2. Install the Build Tools previously downloaded. This installation requires Admin Rights. The installation takes some time. 
+2a. If asked, tick as desired workload the box of "Build Tools for Visual Studio 2017" for C++, with the default settings. 
+2b. After successful installation, restart the laptop.
+3. Make sure to have Python version 3.6.x, because from 3.7 pyaudio wheels are not supported
+4. Download & Install Anaconda (I used Anaconda3-5.2.0-Windows-x86_64 (x64))
+5. Open Anaconda Prompt
+6. Check current packages and their versions: python -m pip list 
+7. Upgrade pip to latest version: python -m pip install --upgrade pip
+8. Upgrade setuptools to latest version: python -m pip install --upgrade setuptools
+9. Navigate to the folder of the chatbot repo
+10. Create a virtual environment with all the required packages\dependencies: conda  env create -f environment.yml . 
+10a. If it gives you network error, it may be the case that your network is blocking conda. Try to use a different network, for example your mobile phone as hotspot. If issue persists, check your firewall settings.
+11. Activate the environment. On Windows, run: conda activate chatbot_social_media_2
+12. Start up Jupyter: jupyter notebook
+13. Have fun with the notebook!
+
+
+Note: 
+If the Google's Text-to-Speech service from Google raises error in the Notebook, it may be due to the fact that the Google's packages are not up-to-date anymore.
+In that case, you need to upgrade them: pip install --upgrade gtts  and pip install --upgrade gtts-token
+Also, do not forget to update the new version number of these packages in the environment.yml file, to keep it up-to-date.
